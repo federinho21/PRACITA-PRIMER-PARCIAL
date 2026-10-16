@@ -8,6 +8,7 @@ class Religion:
         self.creencias = creencias
         self.libros_sagrados = libros_sagrados
         self.descripcion = descripcion
+        self.__init__(classmethod)
 
 
     @property

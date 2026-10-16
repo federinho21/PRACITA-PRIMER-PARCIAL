@@ -4,9 +4,6 @@ class Religion:
         self.deidad = deidad
         self.anio_origen = anio_origen
         self.lugar_origen = lugar_origen
-        self.fundador = fundador
-        self.creencias = creencias
-        self.libros_sagrados = libros_sagrados
         self.descripcion = descripcion
 
 
@@ -43,7 +40,7 @@ class Religion:
         if value is not None:
             if not isinstance(value, str) or not value.strip():
                 raise ValueError("La deidad debe ser una cadena de texto no vacío.")
-        value = value.strip() 
+            value = value.strip() 
         self._deidad = value   
 
 
@@ -55,7 +52,7 @@ class Religion:
     @lugar_origen.setter
     def lugar_origen(self, value):
         if value is not None:
-         if not isinstance(value, str) or not value.strip():
-            raise ValueError("El lugar de origen debe ser un texto no vacío.")
-        value = value.strip()
+            if not isinstance(value, str) or not value.strip():
+                raise ValueError("El lugar de origen debe ser un texto no vacío.")
+            value = value.strip()
         self._lugar_origen = value

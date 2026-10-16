@@ -6,6 +6,9 @@ class Religion:
         self.anio_origen = anio_origen
         self.lugar_origen = lugar_origen
         self.descripcion = descripcion
+        self.fundador = fundador
+        self.creencias = creencias if creencias is not None else []
+        self.libros_sagrados = libros_sagrados if libros_sagrados is not None else []
 
 
     @property
@@ -27,7 +30,7 @@ class Religion:
         if value is not None:
             if type(value) is not int or value == 0:
                 raise ValueError("El año debe ser un entero distinto de cero.")
-            self._anio_origen = value
+        self._anio_origen = value
 
     @property
     def deidad(self):

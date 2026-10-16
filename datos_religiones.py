@@ -190,3 +190,6 @@ if __name__ == '__main__':
     print('\nRELACIONES')
     for origen, destino, tipo in relaciones:
         print(f'{origen.nombre} -> {destino.nombre} ({tipo})')
+
+
+   

@@ -5,7 +5,6 @@ class Religion:
         self.anio_origen = anio_origen
         self.lugar_origen = lugar_origen
         self.descripcion = descripcion
-        self.__init__(classmethod)
 
 
     @property

@@ -13,7 +13,7 @@ class Religion:
 
     @property
     def nombre(self):
-        return self._nombre  
+        return self._nombre
 
 
     @nombre.setter
@@ -32,7 +32,7 @@ class Religion:
      if value is not None:
         if type(value) is not int or value == 0:
             raise ValueError("El año debe ser un entero distinto de cero.")
-        self._anio_origen = value  
+        self._anio_origen = value
 
 
     @property
@@ -44,15 +44,15 @@ class Religion:
         if value is not None:
             if not isinstance(value, str) or not value.strip():
                 raise ValueError("La deidad debe ser una cadena de texto no vacío.")
-        value = value.strip() 
-        self._deidad = value   
+        value = value.strip()
+        self._deidad = value
 
 
     @property
-    def lugar_origen(self):   
+    def lugar_origen(self):
         return self._lugar_origen
 
-     
+
     @lugar_origen.setter
     def lugar_origen(self, value):
         if value is not None:
@@ -60,3 +60,4 @@ class Religion:
             raise ValueError("El lugar de origen debe ser un texto no vacío.")
         value = value.strip()
         self._lugar_origen = value
+
